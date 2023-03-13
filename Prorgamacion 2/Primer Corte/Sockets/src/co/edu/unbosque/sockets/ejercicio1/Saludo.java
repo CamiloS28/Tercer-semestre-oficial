@@ -21,4 +21,21 @@ public class Saludo implements Runnable{
 			e.printStackTrace();
 		}
 	}
+	public void ejecuta (int puerto) {
+			try {
+				System.out.println("Servidor esuchando por el puerto: " + puerto);
+				
+				ServerSocket servidor = new ServerSocket();
+				Socket cliente;
+				try {
+					while((cliente = servidor.accept()) !=null) {
+						new Thread(new Saludo (cliente)).start();
+					}
+				}finally {
+					servidor.close();
+				}
+			}catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 }

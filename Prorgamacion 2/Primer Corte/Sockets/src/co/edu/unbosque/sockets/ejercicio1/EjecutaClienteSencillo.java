@@ -1,4 +1,4 @@
-package co.edu.unbosque.sockets.ejercicio1;
+EjecutaClienteSencillo.javapackage co.edu.unbosque.sockets.ejercicio1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
