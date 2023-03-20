@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Primer server</title>
+</head>
+<body>
+<h1>Primer servidor Hola</h1>
+<%
+//MANEJO DE DECLARACIONES Y EXPRESIONES EN JSP
+int n1 = 15;
+int n2 = 10;
+int s;
+%>
+<%
+s = n1 + n2;
+out.println("n1: " + n1);
+out.println("n2:" + n2);
+%>
+</body>
+</html>
